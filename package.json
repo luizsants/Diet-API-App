@@ -2,6 +2,9 @@
   "name": "diet-api-app",
   "version": "1.0.0",
   "main": "index.js",
+  "engines": {
+    "node": "18"
+  },
   "scripts": {
     "knex": "node --no-warnings --import tsx ./node_modules/knex/bin/cli.js",
     "dev": "tsx watch src/server.ts",
