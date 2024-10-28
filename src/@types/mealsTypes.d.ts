@@ -1,0 +1,5 @@
+export interface Params {
+    id: string;
+}; x
+
+
