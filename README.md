@@ -29,3 +29,46 @@ Sequencia de pratos dentro da dieta,
 refeições registradas,
 refeicoes dentro da dieta,
 refeicoes fora da dieta,
+
+*Run* project:
+
+npm run knex -- migrate:latest
+npm run dev
+
+Routes:
+
+Create a New User
+POST: http://localhost:3333/newUser
+
+Create a New Data on Table
+POST: http://localhost:3333/meals
+
+Get The Data of All Users
+GET: http://localhost:3333/meals/all
+
+Get The One Meal of The Actual User
+GET: http://localhost:3333/meals/:id
+
+Get The Number of Meal Out of Diet - of The Actual User
+GET: http://localhost:3333/meals/mealQuantityOutOfDiet
+
+Get The Number of Meal On Diet - of The Actual User
+GET: http://localhost:3333/meals/mealQuantityOnDiet
+
+Get The Total Number of Meal of The Actual User
+GET: http://localhost:3333/meals/mealQuantity
+
+Get The Best Sequence of The Actual User
+GET: http://localhost:3333/meals/bestSequence
+
+Get The Data of The Actual User
+GET: http://localhost:3333/meals
+
+Delete All Meals of All Users
+DEL: http://localhost:3333/meals/all
+
+Delete a Specific Meal of Actual User
+DEL: http://localhost:3333//meals
+
+Edit a Specific Meal
+PATCH: http://localhost:3333/meals/:id
